@@ -45,7 +45,7 @@ a {
 .body {
   width: auto;
   height: auto;
-  background: url('../assets/home.jpg') no-repeat;
+  background: url('./assets/home.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -66,40 +66,41 @@ a {
 
 .ancient-card:hover,
 .difficulty-box:hover {
-  box-shadow: 0px 0px 20px #0000008a;
-  animation: pulse 2s infinite;
+  transform: scale(1.02)
 }
 
 .azathoth {
   width: 300px;
   height: 400px;
-  background: url('../assets/Ancients/Azathoth.jpg') no-repeat;
+  background: url('./assets/Ancients/Azathoth.jpg') no-repeat;
   background-size: cover;
 }
 
 .cthulthu {
   width: 300px;
   height: 400px;
-  background: url('../assets/Ancients/Cthulthu.jpg') no-repeat;
+  background: url('./assets/Ancients/Cthulthu.jpg') no-repeat;
   background-size: cover;
 }
 
 .iogsothoth {
   width: 300px;
   height: 400px;
-  background: url('../assets/Ancients/IogSothoth.jpg') no-repeat;
+  background: url('./assets/Ancients/IogSothoth.jpg') no-repeat;
   background-size: cover;
 }
 
 .shubniggurath {
   width: 300px;
   height: 400px;
-  background: url('../assets/Ancients/ShubNiggurath.jpg') no-repeat;
+  background: url('./assets/Ancients/ShubNiggurath.jpg') no-repeat;
   background-size: cover;
 }
 
 .active {
   box-shadow: 0px 0px 20px #ffffff;
+  animation: pulse 2s infinite;
+  transform: scale(1.02)
 }
 
 .difficulty-container {
@@ -160,10 +161,10 @@ a {
   animation: none;
 }
 
-
-.result {}
-
-.cards-result {}
+.cards-result {
+  display: flex;
+  gap: 70px;
+}
 
 .fisrt-step,
 .second-step,
@@ -183,26 +184,69 @@ a {
 
 .title {}
 
-.green {
+.green,
+.brown,
+.blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fisrt-step {}
+
+.step {}
+
+.green-cont {
+
   width: 30px;
   height: 30px;
   background-color: rgb(20, 182, 20);
   border-radius: 20px;
 }
 
-.brown {
+.fisrt-step-green {}
+
+.green {}
+
+.brown-cont {
   width: 30px;
   height: 30px;
   background-color: rgb(242, 173, 12);
   border-radius: 20px;
 }
 
-.blue {
+.fisrt-step-brown {}
+
+.brown {}
+
+.blue-cont {
   width: 30px;
   height: 30px;
   background-color: rgb(42, 143, 237);
   border-radius: 20px;
 }
+
+.fisrt-step-blue {}
+
+.blue {}
+
+.second-step {}
+
+.title {}
+
+.second-step-green {}
+
+.second-step-brown {}
+
+.second-step-blue {}
+
+.third-step {}
+
+.third-step-green {}
+
+.third-step-brown {}
+
+.third-step-blue {}
 
 .fisrt-step-green {}
 
@@ -226,7 +270,13 @@ a {
 
 .third-step-blue {}
 
+
+
 .result {
+  display: none
+}
+
+.result-active {
   display: flex;
   gap: 80px;
   justify-content: center;
@@ -237,7 +287,7 @@ a {
   position: relative;
   width: 200px;
   height: 300px;
-  background: url('../assets/mythicCardBackground.jpg') no-repeat;
+  background: url('./assets/mythicCardBackground.jpg') no-repeat;
   background-size: cover;
   border-radius: 20px;
 }
@@ -249,7 +299,7 @@ a {
   left: 110%;
   width: 200px;
   height: 300px;
-  background: url('../assets/mythicCardBackground.jpg') no-repeat;
+  background: url(' ') no-repeat;
   background-size: cover;
   border-radius: 20px;
 }
